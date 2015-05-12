@@ -1,5 +1,21 @@
-(if (featurep 'sqf-mode)
-    (unload-feature 'sqf-mode))
+;;; arma-mode.el --- Emacs major mode for the SQF language.
+
+;; Copyright (C) 2003-2015 Free Software Foundation, Inc.
+
+;; Author: sux <iamthesux@gmail.com>
+;; Version: 0.1
+;; Keywords: arma, sqf
+;; URL: https://github.com/iamthesux/arma-mode
+
+;;; Commentary:
+
+;; This package provides a major mode to highlight and indent
+;; the SQF scripting language.
+
+;;; Code:
+
+;; (if (featurep 'sqf-mode)
+;;     (unload-feature 'sqf-mode))
 
 ;;(load "./words")
 (defvar sqf-mode-builtins
@@ -1871,3 +1887,4 @@ Key bindings:
 (provide 'sqf-c-style)
 (provide 'sqf-mode)
 
+;;; arma-mode.el ends here
