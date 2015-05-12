@@ -18,6 +18,10 @@
 ;;     (unload-feature 'sqf-mode))
 
 ;;(load "./words")
+
+(require 'font-lock)
+(require 'cc-mode)
+
 (defvar sqf-mode-builtins
   '("and"
     "do"
@@ -1884,7 +1888,7 @@ Key bindings:
   ;; (c-update-modeline)
   )
 
-(provide 'sqf-c-style)
-(provide 'sqf-mode)
+(defalias 'arma-mode 'sqf-mode)
+(provide 'arma-mode)
 
 ;;; arma-mode.el ends here
